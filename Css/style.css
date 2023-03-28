@@ -2,8 +2,10 @@
   
  *{
     font-family: 'Bungee', cursive;
+    padding: 0%;
     margin-left:1px;
     margin-right:1px;
+    box-sizing: border-box;
   }
  .cabecera{
   width: 40;
@@ -25,11 +27,15 @@
 }
 .logogeralt{
   background-repeat: no-repeat;
-  position:absolute;
-  bottom: 68%;;
-  right: 79%;
+  position:relative;
+  bottom:100px;
+  left:15%;
   height:400px;
   width:400px;
+  
+  
+ 
+
   
 }
 .header{
@@ -75,6 +81,14 @@ bottom:100px;
   font-weight: bold;
   color: rgb(8, 187, 77);
 }
+.hide {
+  font-size: 22px;
+  padding: 16px;
+  background-color: blueviolet;
+  color: black;
+  cursor: pointer;
+  display:none;
+}
   .linknavsocial {
     text-align: center;
     color: rgb(95, 29, 201);
@@ -93,3 +107,59 @@ bottom:100px;
 .piedepagina{
   background-color: rgb(201, 186, 186);
 }
+
+
+@media (max-width: 1366px){
+  .nav{
+    margin-right:5px;
+  }
+  .nav-link{
+    font-size: 13px;
+}
+.logogeralt{
+  bottom:80px;
+  left:5%;
+  height: 350px;
+  width:350px;
+}
+}
+
+@media (max-width: 1125px){
+.nav-link{
+  font-size: 15px;
+ }
+ .nav {
+  display: inline;
+  float: right;
+
+
+
+}
+}
+
+
+
+
+
+@media (max-width: 858px){
+  .ul li{
+    width:100%;
+    padding: 16px;
+    text-align: right;
+  } 
+  .hide {
+    display: block;
+    
+  } 
+  .bi-list-ul{
+    text-decoration: none;
+  }
+  .nav ul{
+    display: none;
+  }
+  .nav link{
+    font-size:10px;
+  }
+  
+}
+

@@ -11,16 +11,26 @@
 </head>
 
 <body>
-    <div class="conteiner">
-        <img class= "BackgroundBanner" src="../Assets/Images/fondo pagina nueva.jpg" alt="Banner de MetrixBeldmont">
-        <a href="../index.html"><img class="logogeralt" src="../Assets/Images/Metrix__1_-removebg-preview.png" alt="logo geralt"></a>
+    <div class="conteiner-fluid">
+  <div>
+    <div>
+        <img class="BackgroundBanner" src="../Assets/Images/fondo pagina nueva.jpg" alt="BackgroundBanner">
     </div>
+    
+    <div class="position-absolute top-0 start-0" >
+    <div class="position-relative">
+      <a href="../index.html"><img class="logogeralt" src="../Assets/Images/Metrix__1_-removebg-preview.png" alt="logo geralt"></a>
+    </div>
+</div>
+</div>
+    <div  class="conteiner-fluid">
     <header class="header">
+      
+        
         <nav class="nav">
-
             <ul class="nav justify-content-end">   
               <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Inicio</a>
+                  <a class="nav-link active" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="./El Dios Del Gaming.html">El Dios Del Gaming</a>
@@ -29,18 +39,33 @@
                   <a class="nav-link" href="./Contenido de Stream y Juegos.html">Contenido de Stream y Juegos</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link active"  href="#">Review de Juegos y Criticas</a>
+                  <a class="nav-link"  href="#">Review de Juegos y Criticas</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="./Proyectos y Reclutamiento.html">Proyecto y Reclutamiento</a>
               </li>
             </ul>
+            <div class="hide">
+              <div class="dropdown"></div>
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Menu
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                <li><a class="dropdown-item" href="./El Dios Del Gaming.html">El Dios Del Gaming</a></li>
+                <li><a class="dropdown-item" href="./Contenido de Stream y Juegos.html">Contenido de Stream y Juegos</a></li>
+                <li><a class="dropdown-item" href="#">Review de Juegos y Criticas</a></li>
+                <li><a class="dropdown-item" href="./Proyectos y Reclutamiento.html">Proyecto y Reclutamiento</a></li>
+              </ul>
+            </div>
+            </div>
+          </div>
 
         </nav>
       
     </header> 
-    
-    <main class="main">
+   </div>
+    <div class="main">
+    <main>
         <section>
             <h1 class="tituloprincipal">Review de Juegos y Criticas</h1>
             <h2>El Mejor Streamer de LAS</h2>
@@ -48,7 +73,7 @@
         </section>
 
     </main>
-
+   </div>
 
 
 
