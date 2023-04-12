@@ -3,8 +3,8 @@
 * {
   font-family: "Bungee", cursive;
   padding: 0%;
-  margin-left: 1px;
-  margin-right: 1px;
+  margin-left: 0%;
+  margin-right: 0%;
   box-sizing: border-box;
 }
 
@@ -29,12 +29,62 @@
 .logogeralt {
   background-repeat: no-repeat;
   position: relative;
-  bottom: 100px;
+  bottom: 370px;
   left: 15%;
   height: 400px;
   width: 400px;
 }
 
+@media (max-width: 1835px) {
+  .logogeralt {
+    bottom: 350px;
+    left: 5%;
+    height: 400px;
+    width: 400px;
+    animation-name: logogeralt;
+    animation-duration: 3s;
+  }
+}
+@media (max-width: 1483px) {
+  .logogeralt {
+    position: relative;
+  }
+}
+@keyframes logogeralt {
+  0% {
+    transform: scale(1) rotate(10);
+  }
+  10% {
+    transform: scale(1.2);
+  }
+  20% {
+    transform: scale(1.3);
+  }
+  30% {
+    transform: scale(1.4);
+  }
+  40% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1.6);
+  }
+  60% {
+    transform: scale(1.7);
+  }
+  70% {
+    transform: scale(1.8);
+  }
+  80% {
+    transform: scale(1.9);
+  }
+  90% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .header {
   position: relative;
 }
@@ -51,11 +101,25 @@
   color: white;
 }
 
+.h2 {
+  margin: 1rem;
+}
+
 .Parrafos {
   font-weight: 900;
   font-family: "Roboto Slab", serif;
+  margin: 1rem;
 }
 
+.imageninicio {
+  padding: 0%;
+}
+
+@media (max-width: 767px) {
+  .imageninicio {
+    height: 430px;
+  }
+}
 .card {
   margin-right: 10px;
 }
@@ -64,14 +128,68 @@
   font-family: "Roboto Slab", serif;
 }
 
+.lista {
+  margin-right: 20px;
+}
+
+@media (max-width: 1835px) {
+  .lista {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 1629px) {
+  .lista {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 1483px) {
+  .lista {
+    margin-right: 20px;
+    display: inline;
+    float: right;
+  }
+}
+@media (max-width: 1197px) {
+  .lista {
+    margin-right: 20px;
+  }
+}
 .nav {
   position: relative;
   justify-content: flex-end;
   bottom: 200px;
-  margin-right: 20px;
   right: 5px;
 }
 
+.nav-ul {
+  justify-content: space-between;
+}
+
+@media (max-width: 858px) {
+  .nav ul {
+    display: none;
+  }
+}
+.ul li {
+  justify-content: space-between;
+}
+
+@media (max-width: 858px) {
+  .ul li {
+    width: 100%;
+    padding: 16px;
+    text-align: right;
+  }
+}
+.bi-list-ul {
+  justify-content: space-between;
+}
+
+@media (max-width: 858px) {
+  .bi-list-ul {
+    text-decoration: none;
+  }
+}
 .nav-link {
   color: black;
   font-size: 18px;
@@ -79,10 +197,30 @@
 
 .nav-link:hover {
   padding: 0%;
-  font-weight: bold;
+  font-weight: 900;
   color: rgb(8, 187, 77);
 }
 
+@media (max-width: 1835px) {
+  .nav-link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1629px) {
+  .nav-link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1483px) {
+  .nav-link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 858px) {
+  .nav link {
+    font-size: 10px;
+  }
+}
 .hide {
   font-size: 22px;
   padding: 16px;
@@ -90,6 +228,24 @@
   color: rgb(19, 219, 46);
   cursor: pointer;
   display: none;
+}
+
+@media (max-width: 858px) {
+  .hide {
+    display: block;
+  }
+}
+.form {
+  margin: 1rem;
+}
+
+.formulariosend {
+  color: rgb(8, 187, 77);
+  background-color: rgb(212, 65, 241);
+}
+
+.maps {
+  margin: 1rem;
 }
 
 .btn {
@@ -109,7 +265,7 @@
 }
 
 .linknavsocial :hover {
-  font-weight: bold;
+  font-weight: 900;
   padding: 3px;
   background-color: rgb(195, 163, 224);
   color: blue;
@@ -134,71 +290,4 @@
 
 .piedepagina {
   background-color: rgb(201, 186, 186);
-}
-
-@media (max-width: 1835px) {
-  .nav {
-    margin-right: 5px;
-  }
-  .nav-link {
-    font-size: 13px;
-  }
-  .logogeralt {
-    bottom: 80px;
-    left: 5%;
-    height: 350px;
-    width: 350px;
-  }
-  .youtube {
-    width: 780px;
-    height: 400px;
-  }
-}
-@media (max-width: 1629px) {
-  .youtube {
-    width: 780px;
-    height: 400px;
-  }
-}
-@media (max-width: 1401px) {
-  .nav-link {
-    font-size: 15px;
-  }
-  .nav {
-    display: inline;
-    float: right;
-  }
-  .youtube {
-    width: 580px;
-    height: 350px;
-  }
-}
-@media (max-width: 1197px) {
-  .youtube {
-    width: 450px;
-    height: 350px;
-  }
-}
-@media (max-width: 858px) {
-  .ul li {
-    width: 100%;
-    padding: 16px;
-    text-align: right;
-  }
-  .hide {
-    display: block;
-  }
-  .bi-list-ul {
-    text-decoration: none;
-  }
-  .nav ul {
-    display: none;
-  }
-  .nav link {
-    font-size: 10px;
-  }
-  .youtube {
-    width: 315px;
-    height: 350px;
-  }
 }/*# sourceMappingURL=style.css.map */

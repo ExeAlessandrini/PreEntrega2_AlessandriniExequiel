@@ -1,29 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import "variables.scss";
+@import "reset.scss";
+@import "general.scss";
 
 
-  
-*{
-   font-family: 'Bungee', cursive;
-   padding: 0%;
-   margin-left:1px;
-   margin-right:1px;
-   box-sizing: border-box;
- }
+
+
+
+
+
+
+
 .cabecera{
- width: 40;
+ width: $width-minimo;
 }
 .divback{
-width: 100%;
-height: 100%;
+width: $width-maximo;
+height: $heigth-maximo;
 }
  .BackgroundBanner {
-   position:flex;  
-   bottom:95%;
-   width:100%;
-   height: 480px;
-   padding:0%;
-   margin: 0%;
+   position: $position-flex;  
+   bottom: $bottom-big;
+   width: $width-maximo ; 
+   height: $heigth-medio; 
+   padding:$porcentaje-nulo;
+   margin:$porcentaje-nulo;
+  
   
 
    
@@ -31,189 +34,361 @@ height: 100%;
  
 }
 .logogeralt{
- background-repeat: no-repeat;
- position:relative;
- bottom:100px;
- left:15%;
- height:400px;
- width:400px;
- 
- 
-
-
- 
+ background-repeat: $background-norepeat;
+ position:$position-relative;
+ bottom:$bottom-fulllogo; 
+ left: $left-corto;
+ height:$heigth-casimedio;
+ width:$width-medio;
 }
+@media (max-width: $media-uno){
+  
+  .logogeralt{
+   bottom: $bottom-almostfull;   
+   left:$left-mini;   
+   height: $heigth-casimedio; 
+   width:$width-medio; 
+   animation-name:logogeralt;
+   animation-duration:3s;
+  }
+}
+@media (max-width: $media-tres){
+  .logogeralt{
+    position:$position-relative;
+    
+}
+}
+@keyframes logogeralt{
+  0% {
+  transform:scale(1)
+  rotate(10)
+  }
+  10% {
+  transform:scale(1.2)
+  }
+
+  20% {
+  transform:scale(1.3)
+  }
+
+  30% {
+  transform:scale(1.4)
+  }
+
+  40% {
+  transform:scale(1.5)
+  }
+  50% {
+  transform:scale(1.6)
+  }
+  60% {
+  transform:scale(1.7)
+  }
+  70% {
+  transform:scale(1.8)
+  }
+  80% {
+  transform:scale(1.9)
+  }
+  90% {
+  transform:scale(2)
+  }
+  100% {
+  transform:scale(1)
+  }
+      
+    
+
+          
+
+
+}
+
+
+
+
+
+ 
+ 
+
+
+ 
 .header{
  
- position:relative;
+ position:$position-relative;
 }
 .main{
 
-position: relative;
-bottom:100px;
+position: $position-relative;
+bottom: $bottom-full;
 }
 .tituloprincipal{
-   background-color: rgb(110, 37, 228);
-   font-size: 50px;
-   text-align: center;
-   color:white;
+   background-color: $color-uno;
+   font-size: $fuente-titulo;
+   text-align: $textalign-center;
+   color: $color-blanco;
    
    
+}
+.h2 {
+  margin:$margin-unrem;
 }
 
 
 
 .Parrafos {
-   font-weight:900;
-   font-family: 'Roboto Slab', serif;
+   font-weight: $font-weight;
+   font-family: $fuente-secundaria;
+   margin:$margin-unrem;
 
 }
+
+
+
+
+.imageninicio{
+  padding: 0%;
+}
+@media (max-width: $media-imagen){
+  .imageninicio{
+    height:$height-img
+  }
+}
+
+
+
+
+
+
 .card {
-  margin-right:10px;
+  margin-right:$margin-right;
 }
 .card-text{
-  font-family: 'Roboto Slab', serif;
+  font-family: $fuente-secundaria;
 }
+
+
+
+
+
+
+
+.lista{
+  margin-right:$margin-rightdos;
+  
+}
+@media (max-width: $media-uno){
+  .lista{
+    margin-right:$margin-rightdos;
+  }
+}
+@media (max-width: $media-dos){
+  .lista{
+    margin-right:$margin-rightdos;
+  }
+}
+@media (max-width: $media-tres){
+  .lista{
+    margin-right:$margin-rightdos;
+    display: $display-inline;
+    float: $float-right
+  }
+}
+@media (max-width: $media-cuatro){
+  .lista{
+    margin-right:$margin-rightdos;
+  }
+}
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .nav {
- position:relative;
-justify-content: flex-end;
-bottom: 200px;
-margin-right:20px;
-right: 5px;
+ position:$position-relative;
+justify-content: $justify-content;
+bottom: $bottom-doublefull;
+
+right: $right-corto;
 }
 
+
+
+.nav-ul{
+  justify-content: space-between;
+}
+@media (max-width: $media-cinco){
+   
+  .nav ul{
+    display: $display-none;
+  }
+}
+
+
+
+
+
+
+.ul li {
+  justify-content: space-between;
+}
+@media (max-width: $media-cinco){
+  .ul li{
+    width:$width-maximo;
+    padding: $padding;
+    text-align: $textalign-right;
+  } }
+
+
+
+
+
+.bi-list-ul{
+  justify-content: space-between;
+}
+@media (max-width: $media-cinco){
+   
+ 
+  .bi-list-ul{
+    text-decoration: $text-decoration;
+  }
+}
+
+
+
+
 .nav-link {
- color: black;
- font-size: 18px;
+ color: $color-negro;
+ font-size: $font-size;
  
  
 }
 .nav-link:hover {
- padding: 0%;
- font-weight: bold;
- color: rgb(8, 187, 77);
+ padding: $porcentaje-nulo;
+ font-weight: $font-weight;
+ color: $color-dos;
 }
+@media (max-width: $media-uno){
+  .nav-link{
+    font-size:$font-sizedos;
+ }
+}
+@media (max-width:$media-dos){
+  .nav-link{
+font-size: $font-sizecuatro;
+}
+}
+@media (max-width: $media-tres){
+  .nav-link{
+   font-size: $font-sizecuatro;
+  }
+}
+@media (max-width: $media-cinco){
+  .nav link{
+    font-size:$font-sizemini;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 .hide {
- font-size: 22px;
- padding: 16px;
- background-color: rgb(195, 136, 250);
- color: rgb(19, 219, 46);
- cursor: pointer;
- display:none;
+ font-size: $font-sizetres;
+ padding: $padding;
+ background-color: $color-tres;
+ color: $color-cuatro;
+ cursor: $cursor-type;
+ display:$display-none;
 }
+@media (max-width: $media-cinco){
+   
+  .hide {
+    display: $display-block;
+  } }
+
+
+
+.form{
+  margin:$margin-unrem;
+
+}
+.formulariosend{
+  color:$color-dos;
+  background-color: $color-cinco;
+}
+.maps{
+  margin:$margin-unrem;
+}
+
+
 .btn {
-  color: black;
-  background-color: rgb(212, 65, 241);
+  color: $color-negro;
+  background-color: $color-cinco;
 }
 .btn:hover {
-  background-color: rgb(212, 171, 223);
-  color: red;
+  background-color: $color-seis;
+  color: $color-red;
   
 }
  .linknavsocial {
-   text-align: center;
-   color: rgb(95, 29, 201);
-   font-style: none;
+   text-align: $textalign-center;
+   color: $color-siete;
+   font-style: $font-style;
 
 }
 .linknavsocial :hover {
- font-weight: bold;
- padding: 3px;
- background-color: rgb(195, 163, 224);
- color: blue;
+ font-weight: $font-weight;
+ padding: $padding-min;
+ background-color: $color-ocho;
+ color: $color-blue;
 }
 .dropdown-menu {
-  background-color: rgb(83, 19, 129);
+  background-color: $color-nueve;
 }
 .dropdown-menu :hover {
-  background-color: rgb(241, 168, 241);
-  color: red;
+  background-color: $color-diez;
+  color: $color-red;
 }
 .dropdown-item {
-  color: rgb(70, 230, 78);
+  color: $color-once;
 }
 .misredessociales{
- text-align: center;
+ text-align: $textalign-center;
 }
 .piedepagina{
- background-color: rgb(201, 186, 186);
-}
-
-
-@media (max-width: 1835px){
- .nav{
-   margin-right:5px;
- }
- .nav-link{
-   font-size: 13px;
-}
-.logogeralt{
- bottom:80px;
- left:5%;
- height: 350px;
- width:350px;
-}
-.youtube{
-  width: 780px;
-  height: 400px;
-}
-}
-@media (max-width:1629px){
-.youtube{
-    width: 780px;
-    height: 400px;
-  }
-}
-@media (max-width: 1401px){
-.nav-link{
- font-size: 15px;
-}
-.nav {
- display: inline;
- float: right;
-}
-.youtube{
-  width:580px;
-  height: 350px;
-}
-}
-
-@media (max-width: 1197px){
-  .youtube{
-    width: 450px;
-    height: 350px;
-  }
+ background-color: $color-doce;
 }
 
 
 
 
-@media (max-width: 858px){
- .ul li{
-   width:100%;
-   padding: 16px;
-   text-align: right;
- } 
- .hide {
-   display: block;
-   
-   
- } 
- .bi-list-ul{
-   text-decoration: none;
- }
- .nav ul{
-   display: none;
- }
- .nav link{
-   font-size:10px;
- }
- .youtube {
-  width: 315px;
-  height: 350px;
- }
+
+
+
+
+
+
+
+
  
-}
 
