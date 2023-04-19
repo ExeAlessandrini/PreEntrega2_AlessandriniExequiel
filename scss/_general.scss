@@ -89,6 +89,12 @@
       
       
    }
+   .tituloprincipal2{
+    background-color: map-get($map:$map-colors, $key: color-uno);
+    font-size: $fuente-titulodos;
+    text-align: $textalign-center;
+    color: map-get($map:$map-colors , $key:color-blanco );
+   }
    .h2 {
      margin:$margin-unrem;
    }

@@ -91,6 +91,13 @@
   color: white;
 }
 
+.tituloprincipal2 {
+  background-color: rgb(110, 37, 228);
+  font-size: 44px;
+  text-align: center;
+  color: white;
+}
+
 .h2 {
   margin: 1rem;
 }
