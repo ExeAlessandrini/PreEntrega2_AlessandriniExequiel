@@ -4,8 +4,7 @@
     width: $width-minimo;
    }
    .error404{
-    padding: 0%;
-    margin: 0%;
+    @include relative-nulo ($position-flex,$porcentaje-nulo);
     
    }
    .colorfondo{
