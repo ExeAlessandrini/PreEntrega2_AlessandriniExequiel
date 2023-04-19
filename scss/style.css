@@ -12,6 +12,12 @@
   width: 40;
 }
 
+.error404 {
+  position: flex;
+  padding: 0%;
+  margin: 0%;
+}
+
 .colorfondo {
   background: rgb(128, 68, 187);
   background: linear-gradient(90deg, rgba(174, 127, 221, 0.827) 0%, rgba(240, 190, 238, 0.9164040616) 100%);
@@ -24,16 +30,18 @@
 
 .BackgroundBanner {
   position: flex;
+  padding: 0%;
+  margin: 0%;
   bottom: 95%;
   width: 100%;
   height: 480px;
-  padding: 0%;
-  margin: 0%;
 }
 
 .logogeralt {
-  background-repeat: no-repeat;
   position: relative;
+  padding: 0%;
+  margin: 0%;
+  background-repeat: no-repeat;
   bottom: 370px;
   left: 15%;
   height: 400px;
@@ -51,14 +59,28 @@
 @media (max-width: 1483px) {
   .logogeralt {
     position: relative;
+    padding: 0%;
+    margin: 0%;
+  }
+}
+@media (max-width: 456px) {
+  .logogeralt {
+    width: 300px;
+    height: 300px;
+    bottom: 300px;
+    left: 10%;
   }
 }
 .header {
   position: relative;
+  padding: 0%;
+  margin: 0%;
 }
 
 .main {
   position: relative;
+  padding: 0%;
+  margin: 0%;
   bottom: 100px;
 }
 
@@ -80,10 +102,12 @@
 }
 
 .imageninicio {
+  position: relative;
   padding: 0%;
+  margin: 0%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 764px) {
   .imageninicio {
     height: 430px;
   }
@@ -124,6 +148,8 @@
 }
 .nav {
   position: relative;
+  padding: 0%;
+  margin: 0%;
   justify-content: flex-end;
   bottom: 200px;
   right: 5px;
@@ -164,7 +190,9 @@
 }
 
 .nav-link:hover {
+  position: relative;
   padding: 0%;
+  margin: 0%;
   font-weight: 900;
   color: rgb(8, 187, 77);
 }
@@ -201,6 +229,12 @@
 @media (max-width: 858px) {
   .hide {
     display: block;
+  }
+}
+@media (max-width: 456px) {
+  .hide {
+    display: block;
+    bottom: 30%;
   }
 }
 .form {
@@ -253,11 +287,15 @@
 }
 
 .misredessociales {
-  text-align: center;
+  position: relative;
+  padding: 0%;
   margin: 0%;
+  text-align: center;
 }
 
 .piedepagina {
-  background-color: rgb(201, 186, 186);
+  position: relative;
+  padding: 0%;
   margin: 0%;
+  background-color: rgb(201, 186, 186);
 }/*# sourceMappingURL=style.css.map */

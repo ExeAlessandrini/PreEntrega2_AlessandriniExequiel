@@ -53,6 +53,23 @@
        
    }
    }
+   @media (max-width: $media-seis){
+      
+    .logogeralt{
+      width: $width-casiminimo;
+      height: $height-minimo;
+      bottom: $bottom-littebig;
+      left:$left-normal;
+    } }
+
+
+
+
+
+
+
+
+
    
    
    .header{
@@ -268,6 +285,14 @@
      .hide {
        display: $display-block;
      } }
+
+     @media (max-width: $media-seis){
+      
+      .hide {
+        display: $display-block;
+        bottom:30%;
+      } }
+    
    
    
    
@@ -302,7 +327,7 @@
    .linknavsocial :hover {
     font-weight: $font-weight;
     padding: $padding-min;
-    background-color: $color-ocho;
+    background-color: map-get($map:$map-colors, $key:color-ocho );
     color: map-get($map:$map-colors , $key:color-blue );
    }
    .dropdown-menu {
