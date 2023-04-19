@@ -12,6 +12,11 @@
   width: 40;
 }
 
+.colorfondo {
+  background: rgb(128, 68, 187);
+  background: linear-gradient(90deg, rgba(174, 127, 221, 0.827) 0%, rgba(240, 190, 238, 0.9164040616) 100%);
+}
+
 .divback {
   width: 100%;
   height: 100%;
@@ -41,48 +46,11 @@
     left: 5%;
     height: 400px;
     width: 400px;
-    animation-name: logogeralt;
-    animation-duration: 3s;
   }
 }
 @media (max-width: 1483px) {
   .logogeralt {
     position: relative;
-  }
-}
-@keyframes logogeralt {
-  0% {
-    transform: scale(1) rotate(10);
-  }
-  10% {
-    transform: scale(1.2);
-  }
-  20% {
-    transform: scale(1.3);
-  }
-  30% {
-    transform: scale(1.4);
-  }
-  40% {
-    transform: scale(1.5);
-  }
-  50% {
-    transform: scale(1.6);
-  }
-  60% {
-    transform: scale(1.7);
-  }
-  70% {
-    transform: scale(1.8);
-  }
-  80% {
-    transform: scale(1.9);
-  }
-  90% {
-    transform: scale(2);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 .header {
@@ -286,8 +254,10 @@
 
 .misredessociales {
   text-align: center;
+  margin: 0%;
 }
 
 .piedepagina {
   background-color: rgb(201, 186, 186);
+  margin: 0%;
 }/*# sourceMappingURL=style.css.map */

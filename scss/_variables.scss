@@ -47,33 +47,43 @@ $display-none:none;
 $display-inline:inline;
 $display-block:block;
 $justify-content: flex-end;
+$space-between: space-between;
 $textalign-center:center;
 $textalign-right: right;
 $text-decoration: none;
-$color-negro: black;
-$color-blanco: white;
-$color-red: red;
-$color-blue: blue;
-$color-uno: rgb(110, 37, 228);
-$color-dos: rgb(8, 187, 77);
-$color-tres:rgb(195, 136, 250);
-$color-cuatro:rgb(19, 219, 46);
-$color-cinco:rgb(212, 65, 241);
-$color-seis:rgb(212, 171, 223);
-$color-siete:rgb(95, 29, 201);
-$color-ocho: rgb(195, 163, 224);
-$color-nueve: rgb(83, 19, 129);
-$color-diez:rgb(241, 168, 241);
-$color-once:rgb(70, 230, 78);
-$color-doce: rgb(201, 186, 186);
 $media-uno:1835px;
 $media-dos:1629px;
 $media-tres:1483px;
 $media-cuatro:1197px;
 $media-cinco:858px;
-$media-imagen:767px
+$media-imagen:764px;
+
+ 
+
+$map-colors: (
+    color-negro: black,
+    color-blanco: white,
+    color-red: red,
+    color-blue: blue,
+    color-uno: rgb(110, 37, 228),
+    color-dos: rgb(8, 187, 77),
+    color-tres:rgb(195, 136, 250),
+    color-cuatro:rgb(19, 219, 46),
+    color-cinco:rgb(212, 65, 241),
+    color-seis:rgb(212, 171, 223),
+    color-siete:rgb(95, 29, 201),
+    color-ocho: rgb(195, 163, 224),
+    color-nueve: rgb(83, 19, 129),
+    color-diez:rgb(241, 168, 241),
+    color-once:rgb(70, 230, 78),
+    color-doce: rgb(201, 186, 186),
+    color-trece: rgb(128,68,187),
+    linear-gradient:linear-gradient(90deg, rgba(174, 127, 221, 0.827) 0%, rgba(240,190,238,0.9164040616246498) 100%)
+);
 
 
-
-
-
+@mixin relative-nulo ($position-relative,$porcentaje-nulo){
+position:$position-relative;
+padding:$porcentaje-nulo;
+margin:$porcentaje-nulo;
+}

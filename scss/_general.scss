@@ -1,17 +1,27 @@
+@import "variables.scss";
+
 .cabecera{
     width: $width-minimo;
+   }
+   .error404{
+    padding: 0%;
+    margin: 0%;
+    
+   }
+   .colorfondo{
+    background: map-get($map:$map-colors, $key:color-trece);
+    background: map-get($map:$map-colors , $key: linear-gradient);
    }
    .divback{
    width: $width-maximo;
    height: $heigth-maximo;
    }
     .BackgroundBanner {
-      position: $position-flex;  
+      @include relative-nulo ($position-flex,$porcentaje-nulo);
       bottom: $bottom-big;
       width: $width-maximo ; 
       height: $heigth-medio; 
-      padding:$porcentaje-nulo;
-      margin:$porcentaje-nulo;
+      
      
      
    
@@ -20,12 +30,13 @@
     
    }
    .logogeralt{
+    @include relative-nulo ($position-relative,$porcentaje-nulo);
     background-repeat: $background-norepeat;
-    position:$position-relative;
     bottom:$bottom-fulllogo; 
     left: $left-corto;
     height:$heigth-casimedio;
     width:$width-medio;
+   
    }
    @media (max-width: $media-uno){
      
@@ -34,85 +45,31 @@
       left:$left-mini;   
       height: $heigth-casimedio; 
       width:$width-medio; 
-      animation-name:logogeralt;
-      animation-duration:3s;
+     
      }
    }
    @media (max-width: $media-tres){
      .logogeralt{
-       position:$position-relative;
+      @include relative-nulo ($position-relative,$porcentaje-nulo);
        
    }
    }
-   @keyframes logogeralt{
-     0% {
-     transform:scale(1)
-     rotate(10)
-     }
-     10% {
-     transform:scale(1.2)
-     }
-   
-     20% {
-     transform:scale(1.3)
-     }
-   
-     30% {
-     transform:scale(1.4)
-     }
-   
-     40% {
-     transform:scale(1.5)
-     }
-     50% {
-     transform:scale(1.6)
-     }
-     60% {
-     transform:scale(1.7)
-     }
-     70% {
-     transform:scale(1.8)
-     }
-     80% {
-     transform:scale(1.9)
-     }
-     90% {
-     transform:scale(2)
-     }
-     100% {
-     transform:scale(1)
-     }
-         
-       
-   
-             
    
    
-   }
-   
-   
-   
-   
-   
-    
-    
-   
-   
-    
    .header{
     
-    position:$position-relative;
+    @include relative-nulo ($position-relative,$porcentaje-nulo);
    }
    .main{
    
-   position: $position-relative;
+    @include relative-nulo ($position-relative,$porcentaje-nulo);
    bottom: $bottom-full;
    }
    .tituloprincipal{
-      background-color: $color-uno;
+      background-color: map-get($map:$map-colors, $key: color-uno);
       font-size: $fuente-titulo;
       text-align: $textalign-center;
-      color: $color-blanco;
+      color: map-get($map:$map-colors , $key:color-blanco );
       
       
    }
@@ -133,7 +90,7 @@
    
    
    .imageninicio{
-     padding: 0%;
+    @include relative-nulo ($position-relative,$porcentaje-nulo);
    }
    @media (max-width: $media-imagen){
      .imageninicio{
@@ -205,7 +162,7 @@
    
    
    .nav {
-    position:$position-relative;
+    @include relative-nulo ($position-relative,$porcentaje-nulo);
    justify-content: $justify-content;
    bottom: $bottom-doublefull;
    
@@ -215,7 +172,7 @@
    
    
    .nav-ul{
-     justify-content: space-between;
+     justify-content: $space-between;
    }
    @media (max-width: $media-cinco){
       
@@ -230,7 +187,7 @@
    
    
    .ul li {
-     justify-content: space-between;
+     justify-content: $space-between;
    }
    @media (max-width: $media-cinco){
      .ul li{
@@ -244,7 +201,7 @@
    
    
    .bi-list-ul{
-     justify-content: space-between;
+     justify-content: $space-between;
    }
    @media (max-width: $media-cinco){
       
@@ -258,15 +215,16 @@
    
    
    .nav-link {
-    color: $color-negro;
+    color: map-get($map:$map-colors, $key:color-negro );
     font-size: $font-size;
+    
     
     
    }
    .nav-link:hover {
-    padding: $porcentaje-nulo;
+    @include relative-nulo ($position-relative,$porcentaje-nulo);
     font-weight: $font-weight;
-    color: $color-dos;
+    color: map-get($map:$map-colors , $key:color-dos );
    }
    @media (max-width: $media-uno){
      .nav-link{
@@ -301,8 +259,8 @@
    .hide {
     font-size: $font-sizetres;
     padding: $padding;
-    background-color: $color-tres;
-    color: $color-cuatro;
+    background-color: map-get($map: $map-colors, $key:color-tres );
+    color: map-get($map:$map-colors, $key:color-cuatro );
     cursor: $cursor-type;
     display:$display-none;
    }
@@ -319,8 +277,8 @@
    
    }
    .formulariosend{
-     color:$color-dos;
-     background-color: $color-cinco;
+     color: map-get($map:$map-colors, $key:color-dos );
+     background-color: map-get($map:$map-colors , $key: color-cinco ) ;
    }
    .maps{
      margin:$margin-unrem;
@@ -328,17 +286,17 @@
    
    
    .btn {
-     color: $color-negro;
-     background-color: $color-cinco;
+     color:map-get($map:$map-colors, $key:color-negro );
+     background-color: map-get($map:$map-colors, $key:color-cinco );
    }
    .btn:hover {
-     background-color: $color-seis;
-     color: $color-red;
+     background-color: map-get($map:$map-colors , $key:color-seis );
+     color: map-get($map:$map-colors , $key:color-red );
      
    }
     .linknavsocial {
       text-align: $textalign-center;
-      color: $color-siete;
+      color: map-get($map:$map-colors, $key:color-siete );
       font-style: $font-style;
    
    }
@@ -346,21 +304,25 @@
     font-weight: $font-weight;
     padding: $padding-min;
     background-color: $color-ocho;
-    color: $color-blue;
+    color: map-get($map:$map-colors , $key:color-blue );
    }
    .dropdown-menu {
-     background-color: $color-nueve;
+     background-color: map-get($map:$map-colors , $key:color-nueve );
    }
    .dropdown-menu :hover {
-     background-color: $color-diez;
-     color: $color-red;
+     background-color: map-get($map:$map-colors , $key:color-diez );
+     color: map-get($map:$map-colors , $key:color-red );
    }
    .dropdown-item {
-     color: $color-once;
+     color: map-get($map:$map-colors , $key:color-once );
    }
    .misredessociales{
+    @include relative-nulo ($position-relative,$porcentaje-nulo);
     text-align: $textalign-center;
+    
    }
    .piedepagina{
-    background-color: $color-doce;
+    @include relative-nulo ($position-relative,$porcentaje-nulo);
+    background-color: map-get($map:$map-colors , $key:color-doce );
+   
    }
